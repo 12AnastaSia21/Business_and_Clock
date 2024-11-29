@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 109px;
+    width: 100%;
+}
+
+.header__user-tabs {
+    display: flex; 
+    justify-content: first baseline;
+    height: 38px;
+    padding-left: 60px;
+    background-color: rgba(255, 170, 76, 1);
+}
+
+.header__user-tab--business{
+    padding-top: 9px;
+    padding-right: 40px;
+    padding-bottom: 9px;
+    padding-left: 40px;
+    display: flex;
+    justify-content:center;
+    background: rgba(24, 24, 24, 1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: none;
+    width: 168px;
+    font-family: 'Outfit';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.header__user-tab--customers{
+    padding-top: 9px;
+    padding-right: 40px;
+    padding-bottom: 9px;
+    padding-left: 40px;
+    display: flex;
+    justify-content:center;
+    background: rgba(255, 170, 76, 1);
+    border: none;
+    width: 185px;
+    font-family: 'Outfit';
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    
+}
+
+.header__head {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(24, 24, 24, 1);
+    height: 71px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo_img {
+    display: flex;
+    height: 51.83px;
+    width: 51.83px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    padding-top: -1.5;
+    padding-bottom: -1px;
+}
+
+.header__logo_name {
+    display: flex;
+    justify-content:center;
+    margin-top: 6.85px;
+    margin-bottom: 7.02px;
+    margin-left: -3.5px;
+    font-family: 'Outfit';
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.header__button {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    padding-top: 16px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    background: rgba(149, 76, 237, 1);
+    border-radius: 16px;
+    border: none;
+    width: 182px;
+    height: 57px;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+}

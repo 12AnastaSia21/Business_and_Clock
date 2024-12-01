@@ -2,30 +2,29 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Outfit', sans-serif;
+    height: 100%;
 }
 
+/*Стили для header*/
 .header {
     display: flex;
     flex-direction: column;
-    height: 109px;
+    height: 2.09%;
     width: 100%;
 }
 
 .header__user-tabs {
     display: flex; 
-    justify-content: first baseline;
-    height: 38px;
+    height: 34.86%;
+    min-height: 38px;
     padding-left: 60px;
     background-color: rgba(255, 170, 76, 1);
 }
 
-.header__user-tab--business{
-    padding-top: 9px;
-    padding-right: 40px;
-    padding-bottom: 9px;
-    padding-left: 40px;
+.button_business{
     display: flex;
     justify-content:center;
+    align-items: center;
     background: rgba(24, 24, 24, 1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -38,49 +37,46 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-.header__user-tab--customers{
-    padding-top: 9px;
-    padding-right: 40px;
-    padding-bottom: 9px;
-    padding-left: 40px;
+.button_customers{
     display: flex;
     justify-content:center;
+    align-items: center;
     background: rgba(255, 170, 76, 1);
     border: none;
     width: 185px;
     font-family: 'Outfit';
     font-size: 16px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 1);
-    
+    line-height: 20.16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1); 
 }
 
 .header__head {
     display: flex;
     justify-content: space-between;
     background-color: rgba(24, 24, 24, 1);
-    height: 71px;
+    max-height: 71px;
+    height: 65.14%;
     padding-left: 60px;
     padding-right: 60px;
 
 }
 
-.header__logo {
+.logo {
     display: flex;
     align-items: center;
 }
 
-.header__logo_img {
+.logo__img_header {
     display: flex;
     height: 51.83px;
     width: 51.83px;
     margin-top: 11px;
     margin-bottom: 11px;
-    padding-top: -1.5;
-    padding-bottom: -1px;
 }
 
-.header__logo_name {
+.logo__name_header{
     display: flex;
     justify-content:center;
     margin-top: 6.85px;
@@ -94,17 +90,142 @@ body {
     text-align: center;
 }
 
-.header__button {
+.button-contact_head {
     display: flex;
     justify-content:center;
     align-items: center;
     gap: 14px;
     margin-top: 7px;
     margin-bottom: 7px;
-    padding-top: 16px;
-    padding-right: 30px;
-    padding-bottom: 16px;
-    padding-left: 30px;
+    background: rgba(149, 76, 237, 1);
+    border-radius: 16px;
+    border: none;
+    width: 182px;
+    height: 57px;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+}
+
+/*Стили для main*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 4911px;
+}
+
+.section-influencer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 64px;
+    min-height: 591px;
+    background: rgba(24, 24, 24, 1);
+}
+
+.section-influencer__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 82px;
+    margin-left: 110px;
+    min-width: 671px;
+    max-height: 369px;
+}
+
+.section-influencer__headline {
+    margin: 0;
+    margin-bottom: 20px;
+    min-width: 671px;
+    min-height: 204px;
+    font-family: 'Outfit';
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 101.76px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    font-variant-ligatures: none;
+}
+
+.section-influencer__text {
+    margin: 0;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.button-contact_section-influencer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 14px;
+    background: rgba(149, 76, 237, 1);
+    border-radius: 16px;
+    border: none;
+    width: 182px;
+    height: 57px;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+}
+
+.section-influencer__img {
+    margin-top: 62px;
+    
+}
+
+.divider {
+    min-height: 100px;
+    background: rgba(24, 24, 24, 1);
+}
+
+.section-about {
+    
+    min-height: 953px;
+    background: rgba(24, 24, 24, 1);
+}
+.section-iphone {
+    
+    min-height: 636px;
+    background: rgba(24, 24, 24, 1);
+}
+.section-statistics {
+    
+    min-height: 222px;
+    background: rgba(24, 24, 24, 1);
+}
+.section-why-budss {
+    
+    min-height: 1192px;
+    background: rgba(24, 24, 24, 1);
+}
+.section-grow-business {
+    
+    min-height: 1017px;
+    background: rgba(24, 24, 24, 1);
+}
+
+/*Стили для footer*/
+.footer {
+    display: flex;
+    height: 3.61%;
+    background: rgba(24, 24, 24, 1);
+}
+.button-contact_footer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 14px;
     background: rgba(149, 76, 237, 1);
     border-radius: 16px;
     border: none;

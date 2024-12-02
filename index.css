@@ -6,6 +6,9 @@ body {
     max-width: 1440px;
 }
 
+
+
+
 /*Стили для header*/
 .header {
     display: flex;
@@ -111,14 +114,18 @@ body {
     white-space: nowrap;
 }
 
-/*Стили для main*/
 
+
+
+
+/*Стили для main*/
 .main {
     display: flex;
     flex-direction: column;
     min-height: 4911px;
 }
 
+/* Стили для секции influencer */
 .section-influencer {
     display: flex;
     flex-direction: row;
@@ -191,31 +198,138 @@ body {
     background: rgba(24, 24, 24, 1);
 }
 
+
+/* Стили для секции about */
 .section-about {
-    
-    min-height: 953px;
     background: rgba(24, 24, 24, 1);
+    display: flex;
+    flex-direction: column;
+    max-height: 953px;
 }
+
+.section-about__headline {
+    margin: 0 0 0 60px ;
+    font-family: Outfit;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-about__content {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 80px; 
+    align-items: flex-start; 
+}
+
+.section-about__subtitle {
+    margin: 0 118px 0 60px;
+    font-family: Outfit;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-about__subtitle-info {
+    position: relative;
+}
+
+.background {
+    background: url(background.svg) no-repeat;
+    background-position: center 5px;
+    position: relative;
+    background-size: contain;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0 10px 10px 10px;
+    min-height: 45px;
+}
+
+.section-about__contactless,
+.section-about__increased,
+.section-about__analytics,
+.section-about__protection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.section-about__contactless {
+    margin-right: 70px;
+}
+.section-about__analytics {
+    margin-top: 70px;
+    margin-right: 85px;
+}
+.section-about__protection {
+    margin-top: 70px;
+}
+
+.section-about__description-title {
+    margin: 0;
+    font-family: Outfit;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-about__description {
+    margin: 10px 0 0 0;
+    font-family: Outfit;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-about__lines {
+    align-self: center;
+    max-width: 100%;
+    margin-right: 165px;
+}
+
+
+/* Стили для секции iphone */
 .section-iphone {
     
     min-height: 636px;
     background: rgba(24, 24, 24, 1);
 }
+
+
+/* Стили для секции statistics */
 .section-statistics {
     
     min-height: 222px;
     background: rgba(24, 24, 24, 1);
 }
+
+
+/* Стили для секции why-budss */
 .section-why-budss {
     
     min-height: 1192px;
     background: rgba(24, 24, 24, 1);
 }
+
+
+/* Стили для секции grow-business */
 .section-grow-business {
     
     min-height: 1017px;
     background: rgba(245, 245, 245, 1);
 }
+
+
+
 
 /*Стили для footer*/
 .footer {

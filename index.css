@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Outfit', sans-serif;
     height: 100%;
+    max-width: 1440px;
 }
 
 /*Стили для header*/
@@ -21,7 +22,7 @@ body {
     background-color: rgba(255, 170, 76, 1);
 }
 
-.button_business{
+.button-business_header{
     display: flex;
     justify-content:center;
     align-items: center;
@@ -37,7 +38,7 @@ body {
     color: rgba(255, 255, 255, 1);
 }
 
-.button_customers{
+.button_customers_header{
     display: flex;
     justify-content:center;
     align-items: center;
@@ -63,7 +64,7 @@ body {
 
 }
 
-.logo {
+.logo_header {
     display: flex;
     align-items: center;
 }
@@ -165,6 +166,7 @@ body {
     display: flex;
     justify-content:center;
     align-items: center;
+    margin-top: 40px;
     gap: 14px;
     background: rgba(149, 76, 237, 1);
     border-radius: 16px;
@@ -212,15 +214,94 @@ body {
 .section-grow-business {
     
     min-height: 1017px;
-    background: rgba(24, 24, 24, 1);
+    background: rgba(245, 245, 245, 1);
 }
 
 /*Стили для footer*/
 .footer {
     display: flex;
-    height: 3.61%;
+    flex-direction: column;
+    min-height: 188px;
+    margin: 0 auto;
     background: rgba(24, 24, 24, 1);
 }
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-right: 60px;
+}
+
+.footer__content-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 126px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    height: 57px;
+    width: 155px;
+}
+
+.logo__img_footer {
+    display: flex;
+    height: 51.83px;
+    width: 51.83px;
+    
+}
+
+.logo__name_footer {
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    font-family: 'Outfit';
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.footer__user-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.button-business_footer {
+    padding: 0;
+    background: rgba(24, 24, 24, 1);
+    border: none;
+    font-family: 'Outfit';
+    font-size: 20px;
+    line-height: 25.2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+}
+
+.button_customers_footer {
+    padding: 0;
+    background: rgba(24, 24, 24, 1);
+    border: none;
+    font-family: 'Outfit';
+    font-size: 20px;
+    line-height: 25.2px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+}
+
 .button-contact_footer {
     display: flex;
     justify-content:center;
@@ -237,4 +318,72 @@ body {
     line-height: 25.2px;
     color: rgba(255, 255, 255, 1);
     white-space: nowrap;
+}
+
+.footer__download-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__button-appstore_desktop {
+    margin: 0;
+    padding: 0;
+    width: 194px;
+    height: 57px;
+    border: none;
+    background: rgba(24, 24, 24, 1);
+}
+
+.footer__button-googleplay_desktop {
+    margin: 0;
+    padding: 0;
+    width: 194px;
+    height: 57px;
+    border: none;
+    background: rgba(24, 24, 24, 1);
+}
+
+.user-agreement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 60px;
+    margin-top: 30px;
+    margin-right: 60px;
+    min-height: 40px;
+    
+    border-top: 2px solid rgba(68, 68, 68, 1);
+   
+}
+
+.user-agreement__copyright {
+    margin: 0;
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.6px;
+    text-align: left;
+    color: rgba(185, 185, 185, 1);
+}
+
+.user-agreement__privacy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.user-agreement__url {
+    font-family: Outfit;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.6px;
+    text-align: right;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: rgba(185, 185, 185, 1);
 }

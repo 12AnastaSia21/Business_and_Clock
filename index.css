@@ -117,7 +117,6 @@ body {
 
 
 
-
 /*Стили для main*/
 .main {
     display: flex;
@@ -262,10 +261,12 @@ body {
 .section-about__contactless {
     margin-right: 70px;
 }
+
 .section-about__analytics {
     margin-top: 70px;
     margin-right: 85px;
 }
+
 .section-about__protection {
     margin-top: 70px;
 }
@@ -299,18 +300,133 @@ body {
 
 /* Стили для секции iphone */
 .section-iphone {
-    
+    position: relative;
     min-height: 636px;
     background: rgba(24, 24, 24, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.section-iphone__scrole-text {
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 68px;
+    margin-top: 46px;
+    pointer-events: none;
+}
+
+.section-iphone__first-text {
+    animation: runRight 20s linear infinite;
+    margin: 0;
+    font-family: 'Outfit';
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 135.68px;
+    text-align: left;
+    color: rgba(47, 219, 188, 1);
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.section-iphone__second-text {
+    animation: runLeft 19s linear infinite;
+    margin: 0;
+    font-family: 'Outfit';
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 135.68px;
+    text-align: left;
+    color: rgba(166, 76, 237, 1);
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.section-iphone__third-text {
+    animation: runRight 21s linear infinite;
+    margin: 0;
+    font-family: 'Outfit';
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 135.68px;
+    text-align: left;
+    color: rgba(255, 170, 76, 1);
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.section-iphone__ghost-text{
+    margin: 0;
+    font-family: 'Outfit';
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 135.68px;
+    text-align: left;
+    text-shadow: 1px 1px 0 #444444,-1px -1px 0 #444444,1px -1px 0 #444444,-1px 1px 0 #444444,1px 1px 0 #444444;
+    color: rgba(24, 24, 24, 1);
+    white-space: nowrap;
+    display: inline-block;
+}
+
+@keyframes runRight {
+    from {
+       transform: translateX(0%);
+    }
+    to {
+       transform: translateX(100%);
+    }
+ }
+
+ @keyframes runLeft {
+    from {
+       transform: translateX(0%);
+    }
+    to {
+       transform: translateX(-100%);
+    }
+ }
+ 
+.section-iphone__video {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-iphone__phone {
+    position: absolute;
+    z-index: 2;
+    max-width: 100%;
+    display: block;
+    margin-top: 7px;
+    max-width: 308px;
+    height: auto;
+}
+
+.section-iphone__guide {
+    position: relative;
+    max-width: 288px;
+    border-radius: 49px;
+    max-height: 603px;
+    object-fit: cover;
+    margin-top: 14px;
+    z-index: 1;
 }
 
 
 /* Стили для секции statistics */
 .section-statistics {
+    display: flex;
     
-    min-height: 222px;
-    background: rgba(24, 24, 24, 1);
+    background: rgba(149, 76, 237, 1);
 }
+
 
 
 /* Стили для секции why-budss */

@@ -423,11 +423,43 @@ body {
 /* Стили для секции statistics */
 .section-statistics {
     display: flex;
-    
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    padding-left: 349.5px;
+    min-height: 222px;
     background: rgba(149, 76, 237, 1);
 }
 
+.section-statistics__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    gap: 16px;
+}
 
+.section-statistics__percent {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 67.84px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.section-statistics__text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
 
 /* Стили для секции why-budss */
 .section-why-budss {

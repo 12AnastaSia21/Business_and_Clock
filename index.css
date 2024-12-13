@@ -966,6 +966,10 @@ body {
     color: rgba(185, 185, 185, 1);
 }
 
+
+
+
+/*Стили для элемента cookie*/
 .cookie {
     position: relative;
     display: flex; 
@@ -979,6 +983,13 @@ body {
     background: rgba(255, 255, 255, 1);
     border-radius: 16px;
     z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+}
+
+.cookie.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .cookie__text {
@@ -1043,3 +1054,5 @@ body {
     background: rgba(255, 255, 255, 1);
     border: none;
 }
+
+

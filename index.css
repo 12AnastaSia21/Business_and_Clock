@@ -663,9 +663,133 @@ body {
 
 /* Стили для секции grow-business */
 .section-grow-business {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     min-height: 1017px;
     background: rgba(245, 245, 245, 1);
+}
+
+.section-grow-business__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 100px;
+    width: 100%;
+}
+
+.section-grow-business__head-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-left: 60px;
+    box-sizing: border-box;
+    border: 1px solid rgba(207, 207, 207, 1);
+    border-radius: 60px;
+    min-height: 285px;
+    min-width: 1320px;
+}
+
+.section-grow-business__headline {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 67.84px;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+;
+}
+
+.button-contact_section-grow-business {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 14px;
+    background: rgba(149, 76, 237, 1);
+    border-radius: 16px;
+    border: none;
+    width: 182px;
+    height: 57px;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+}
+
+.section-grow-business__social-network {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    padding-left: 60px;
+    align-items: center;
+    gap: 33px;
+}
+
+.social-network__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 822px;
+
+}
+
+.social-network__title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 101.76px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.social-network__text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+    
+}
+
+.social-network__icons {
+    display: flex;
+    flex-direction: column;
+    min-width: 480px;
+    gap: 2px;
+}
+
+.social-network__icons-one {
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    justify-content: flex-start;
+}
+
+.social-network__icons-two {
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    justify-content: flex-end;
+}
+
+.social-network__marketplace {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    padding-left: 51px;
+    min-width: 1338px;
 }
 
 

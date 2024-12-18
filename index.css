@@ -1048,11 +1048,200 @@ body {
 }
 
 .button-x {
+    padding: 0;
     position: absolute;
     top: 16px;
     right: 16px;
-    background: rgba(255, 255, 255, 1);
+    background: none;
     border: none;
 }
 
+
+
+
+/*Стили для окна регистрации*/
+.registration-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.registration-modal.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.registration-modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.registration-modal__content {
+    background-color: rgba(255, 255, 255, 1);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 417px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+
+.registration-modal__close {
+    padding: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.registration-modal__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 337px;
+}
+
+
+.registration-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+}
+
+.registration-form label {
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(7, 7, 7, 1);
+}
+
+.registration-form input {
+    padding: 8px 16px;
+    max-height: 40px;
+    border: 1px solid rgba(241, 241, 241, 1);
+    border-radius: 14px;
+    font-family: 'Outfit';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(7, 7, 7, 1);
+}
+
+.registration-form input:invalid:not(:placeholder-shown) {
+    border: 1px solid rgba(255, 0, 0, 1);
+}
+
+.registration-form input:invalid:not(:placeholder-shown) + .error-message {
+    display: block; 
+}
+
+.error-message { 
+    margin: 0; 
+    padding: 0;
+    color: rgba(255, 0, 0, 1);
+    font-family: 'Outfit';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    display: none;
+}
+
+.registration-form input::placeholder {
+    margin: 0;
+    font-family: 'Outfit';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(167, 167, 167, 1);
+}
+
+.required {
+    font-family: 'Outfit';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: rgba(255, 108, 45, 1);
+}
+
+.warning {
+    display: none;
+    margin: 0;
+    gap: 20px;
+    font-family: 'Outfit';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.16px;
+    text-align: left;
+    color: rgba(236, 18, 17, 1);
+}
+
+.registration-modal__info {
+    margin: 0;
+    padding: 0;
+    min-height: 40px;
+    font-family: 'Outfit';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.6px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.links {
+    font-family: 'Outfit';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.6px;
+    text-align: left;
+    color: rgba(149, 76, 237, 1);
+    font-style: solid;
+    text-decoration: underline;
+}
+
+.button-contact_registration {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 14px;
+    background: rgba(185, 185, 185, 1);
+    border-radius: 16px;
+    border: none;
+    width: 182px;
+    height: 57px;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: rgba(255, 255, 255, 1);
+    white-space: nowrap;
+
+}
 

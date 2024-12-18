@@ -6,9 +6,6 @@ body {
     max-width: 1440px;
 }
 
-
-
-
 /*Стили для header*/
 .header {
     display: flex;
@@ -112,6 +109,13 @@ body {
     line-height: 25.2px;
     color: rgba(255, 255, 255, 1);
     white-space: nowrap;
+}
+
+.button-contact_head:hover, 
+.button-contact_section-influencer:hover,
+.button-contact_section-grow-business:hover, 
+.button-contact_footer:hover {
+    background: rgba(24, 24, 24, 1); 
 }
 
 

@@ -3,65 +3,63 @@ body {
     padding: 0;
     font-family: 'Outfit', sans-serif;
     height: 100%;
-    max-width: 1440px;
+    width: 100%;
+    max-width: none;
 }
 
-/*Стили для header*/
+/* Стили для header */
 .header {
     display: flex;
     flex-direction: column;
-    height: 2.09%;
     width: 100%;
 }
 
+/* Верхняя панель вкладок */
 .header__user-tabs {
-    display: flex; 
-    height: 34.86%;
-    min-height: 38px;
-    padding-left: 60px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 4%;
     background-color: rgba(255, 170, 76, 1);
+    height: auto;
+    align-items: center;
 }
 
-.button-business_header{
+.button-business_header,
+.button_customers_header {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
+    font-family: 'Outfit';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.16px;
+    border: none;
+    white-space: nowrap;
+    width: 168px;
+    height: 38px;
+}
+
+.button-business_header {
     background: rgba(24, 24, 24, 1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border: none;
-    width: 168px;
-    font-family: 'Outfit';
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20.16px;
     color: rgba(255, 255, 255, 1);
 }
 
-.button_customers_header{
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.button_customers_header {
     background: rgba(255, 170, 76, 1);
-    border: none;
-    width: 185px;
-    font-family: 'Outfit';
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20.16px;
-    text-align: center;
-    color: rgba(0, 0, 0, 1); 
+    color: rgba(0, 0, 0, 1);
 }
 
+/* Основная часть header */
 .header__head {
     display: flex;
     justify-content: space-between;
     background-color: rgba(24, 24, 24, 1);
+    padding: 0 4%;
+    height: auto;
     max-height: 71px;
-    height: 65.14%;
-    padding-left: 60px;
-    padding-right: 60px;
-
 }
 
 .logo_header {
@@ -70,34 +68,25 @@ body {
 }
 
 .logo__img_header {
-    display: flex;
-    height: 51.83px;
-    width: 51.83px;
-    margin-top: 11px;
-    margin-bottom: 11px;
+    height: 52px;
+    width: 52px;
+    margin: 0 10px;
 }
 
-.logo__name_header{
-    display: flex;
-    justify-content:center;
-    margin-top: 6.85px;
-    margin-bottom: 7.02px;
-    margin-left: -3.5px;
-    font-family: 'Outfit';
+.logo__name_header {
     font-size: 37px;
     font-weight: 600;
     line-height: 17px;
     color: rgba(255, 255, 255, 1);
-    text-align: center;
 }
 
+/* Кнопка контакта */
 .button-contact_head {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 14px;
     margin-top: 7px;
-    margin-bottom: 7px;
     background: rgba(149, 76, 237, 1);
     border-radius: 16px;
     border: none;
@@ -109,6 +98,17 @@ body {
     line-height: 25.2px;
     color: rgba(255, 255, 255, 1);
     white-space: nowrap;
+
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header__user-tabs {
+        padding: 0 2%;
+    }
+    .header__head {
+        padding: 0 2%;
+    }
 }
 
 .button-contact_head:hover, 
@@ -133,9 +133,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
-    gap: 64px;
+    align-items: center; /* Центрируем контент по вертикали */
+    gap: 5%; /* Промежуток между текстом и изображением */
     min-height: 591px;
     background: rgba(24, 24, 24, 1);
+    padding: 0 0 0 7%;
 }
 
 .section-influencer__content {
@@ -143,17 +145,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    margin-top: 82px;
-    margin-left: 110px;
-    min-width: 671px;
-    max-height: 369px;
+    max-width: 60%; /* Контент занимает до 60% ширины */
 }
 
 .section-influencer__headline {
-    margin: 0;
-    margin-bottom: 20px;
-    min-width: 671px;
-    min-height: 204px;
+    margin: 0 0 20px 0;
     font-family: 'Outfit';
     font-size: 96px;
     font-weight: 700;
@@ -174,15 +170,15 @@ body {
 
 .button-contact_section-influencer {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin-top: 40px;
     gap: 14px;
     background: rgba(149, 76, 237, 1);
     border-radius: 16px;
     border: none;
-    width: 182px;
-    height: 57px;
+    width: 182px; /* Фиксированная ширина */
+    height: 57px; /* Фиксированная высота */
     font-family: 'Outfit';
     font-size: 20px;
     font-weight: 600;
@@ -192,9 +188,34 @@ body {
 }
 
 .section-influencer__img {
-    margin-top: 62px;
-    
+    margin: 0;
+    max-height: 100%; /* Изображение занимает 100% высоты контейнера */
+    object-fit: contain; /* Сохраняем пропорции изображения */
+    align-self: flex-end; /* Прижимаем изображение к правому краю */
 }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .section-influencer {
+        flex-direction: column; /* Ставим элементы друг под другом */
+        align-items: center; /* Центрируем контент */
+        text-align: center; /* Центрируем текст */
+        gap: 20px; /* Промежуток между блоками */
+    }
+
+    .section-influencer__content {
+        max-width: 90%; /* Контент занимает до 90% ширины */
+    }
+
+    .section-influencer__headline {
+        font-size: 72px; /* Уменьшаем шрифт на мобильных */
+    }
+
+    .section-influencer__img {
+        max-width: 80%; /* Ограничиваем ширину изображения */
+    }
+}
+
 
 .divider {
     min-height: 100px;
@@ -202,17 +223,21 @@ body {
 }
 
 
-/* Стили для секции about */
+
+/* Стили для секции about*/
 .section-about {
+    position: relative;
     background: rgba(24, 24, 24, 1);
     display: flex;
     flex-direction: column;
-    max-height: 953px;
+    padding: 0 0 0 4%; 
+    max-width: 100%;
+    min-height: 953px;
 }
 
 .section-about__headline {
-    margin: 0 0 0 60px ;
-    font-family: Outfit;
+    margin: 0;
+    font-family: 'Outfit';
     font-size: 96px;
     font-weight: 700;
     line-height: 1.1;
@@ -224,27 +249,26 @@ body {
     display: flex;
     flex-wrap: wrap; 
     margin-top: 80px; 
-    align-items: flex-start; 
+    gap: 9%;
+}
+
+.section-about__subtitle-info {
+    position: relative; 
 }
 
 .section-about__subtitle {
-    margin: 0 118px 0 60px;
+    margin: 0; 
     font-family: Outfit;
-    font-size: 36px;
+    font-size: 36px; 
     font-weight: 600;
     line-height: 1.25;
     text-align: left;
     color: rgba(255, 255, 255, 1);
 }
 
-.section-about__subtitle-info {
-    position: relative;
-}
-
 .background {
     background: url(background.svg) no-repeat;
     background-position: center 5px;
-    position: relative;
     background-size: contain;
     display: inline-block;
     margin-left: 5px;
@@ -252,53 +276,102 @@ body {
     min-height: 45px;
 }
 
+.section-about__info {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.section-about__info-one {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.section-about__info-two {
+    display: flex;
+    flex-direction: row;
+    gap: 11.6%;
+}
+
 .section-about__contactless,
 .section-about__increased,
 .section-about__analytics,
 .section-about__protection {
     display: flex;
+    display: inline-block;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
 }
 
-.section-about__contactless {
-    margin-right: 70px;
-}
-
-.section-about__analytics {
-    margin-top: 70px;
-    margin-right: 85px;
-}
-
-.section-about__protection {
-    margin-top: 70px;
+.section-about__lines {
+    position: absolute; 
+    object-fit: contain;
+    left: 0;
+    bottom: 0;
 }
 
 .section-about__description-title {
     margin: 0;
     font-family: Outfit;
-    font-size: 48px;
+    font-size: 48px; /* Фиксированный размер шрифта */
     font-weight: 700;
     line-height: 1.1;
-    text-align: left;
     color: rgba(255, 255, 255, 1);
 }
 
 .section-about__description {
     margin: 10px 0 0 0;
     font-family: Outfit;
-    font-size: 24px;
+    font-size: 24px; /* Фиксированный размер шрифта */
     font-weight: 400;
     line-height: 1.2;
     text-align: left;
     color: rgba(255, 255, 255, 1);
+    white-space: nowrap
 }
 
-.section-about__lines {
-    align-self: center;
-    max-width: 100%;
-    margin-right: 165px;
+/* Адаптивность */
+@media (max-width: 768px) {
+    .section-about {
+        padding: 0 2%; /* Уменьшенные отступы */
+    }
+
+    .section-about__headline {
+        font-size: 64px; /* Уменьшенный размер для мобильных */
+        text-align: center;
+    }
+
+    .section-about__subtitle {
+        text-align: center;
+    }
+
+    .section-about__content {
+        flex-direction: column; /* Элементы располагаются в колонку */
+        gap: 20px; /* Увеличиваем расстояние между блоками */
+    }
+
+    .section-about__info-one,
+    .section-about__info-two {
+        flex-direction: column; /* Колонки переходят в строки */
+        gap: 30px;
+    }
+
+    .section-about__contactless,
+    .section-about__increased,
+    .section-about__analytics,
+    .section-about__protection {
+        flex: 1 1 100%; /* Элементы занимают всю ширину */
+        text-align: center; /* Центрируем содержимое */
+    }
+
+    .section-about__description {
+        text-align: center;
+    }
+    .section-about__lines {
+        display: none; /* Скрываем линии на мобильных */
+    }
 }
 
 
